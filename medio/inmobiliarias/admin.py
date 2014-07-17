@@ -12,7 +12,7 @@ from .models import Inmobiliaria
 from sorl.thumbnail import get_thumbnail
 
 class InmobiliariaAdmin(admin.ModelAdmin):
-	list_display = ('razon_social', 'ruc', 'direccion', 'telefono_fijo_1', 'telefono_celular_1', 'web', 'logo_inmobiliaria')
+	list_display = ('razon_social', 'ruc', 'nombre_comercial','direccion', 'telefono_fijo_1', 'web', 'logo_inmobiliaria')
 	search_fields = ('razon_social', 'ruc')
 	
 	def logo_inmobiliaria(self, obj):
